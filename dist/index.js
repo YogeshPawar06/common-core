@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserValidationPipe = exports.AuthGuard = exports.BaseException = exports.CustomException = void 0;
+exports.ConstantsService = exports.ConfigService = exports.AzureService = exports.ApicallInterceptor = exports.ApiCallsService = exports.UserValidationPipe = exports.AuthGuard = exports.BaseException = exports.CustomException = void 0;
 const base_exception_1 = require("./errorhelper/base-exception");
 Object.defineProperty(exports, "BaseException", { enumerable: true, get: function () { return base_exception_1.BaseException; } });
 const custom_exception_1 = require("./errorhelper/custom-exception");
@@ -9,4 +9,14 @@ const auth_guard_1 = require("./guards/auth.guard");
 Object.defineProperty(exports, "AuthGuard", { enumerable: true, get: function () { return auth_guard_1.AuthGuard; } });
 const user_validation_pipe_1 = require("./pipes/user-validation.pipe");
 Object.defineProperty(exports, "UserValidationPipe", { enumerable: true, get: function () { return user_validation_pipe_1.UserValidationPipe; } });
+const api_calls_service_1 = require("./utils/api-calls.service");
+Object.defineProperty(exports, "ApiCallsService", { enumerable: true, get: function () { return api_calls_service_1.ApiCallsService; } });
+const apicall_interceptor_1 = require("./utils/apicall.interceptor");
+Object.defineProperty(exports, "ApicallInterceptor", { enumerable: true, get: function () { return apicall_interceptor_1.ApicallInterceptor; } });
+const azure_config_service_1 = require("./utils/azure.config.service");
+Object.defineProperty(exports, "AzureService", { enumerable: true, get: function () { return azure_config_service_1.AzureService; } });
+const config_service_1 = require("./utils/config.service");
+Object.defineProperty(exports, "ConfigService", { enumerable: true, get: function () { return config_service_1.ConfigService; } });
+const constants_service_1 = require("./utils/constants.service");
+Object.defineProperty(exports, "ConstantsService", { enumerable: true, get: function () { return constants_service_1.ConstantsService; } });
 //# sourceMappingURL=index.js.map
